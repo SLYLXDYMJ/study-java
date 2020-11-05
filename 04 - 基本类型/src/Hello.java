@@ -4,7 +4,7 @@ public class Hello {
     short code = 200;
     int i = 200;
     long total = 9999999999L;
-
+    
     double price = 10.59;
     float price2 = 10.59F;
 
