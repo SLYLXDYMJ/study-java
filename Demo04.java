@@ -1,10 +1,13 @@
-public class Hello {
+/**
+ * 8大基本类型
+ **/
+public class Demo04 {
   public static void main(String[] args) {
     byte score = 99;
     short code = 200;
     int i = 200;
     long total = 9999999999L;
-    
+
     double price = 10.59;
     float price2 = 10.59F;
 

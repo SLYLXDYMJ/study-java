@@ -1,0 +1,24 @@
+# Java 基本类型
+```
+整数类型
+byte
+short
+int
+long（值结尾要以 L 结尾）
+```
+
+```
+浮点类型
+float（值结尾要以 F 结尾）
+double
+```
+
+```
+字符类型
+char
+```
+
+```
+布尔类型
+boolean
+```
