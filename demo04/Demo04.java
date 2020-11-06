@@ -1,6 +1,8 @@
+package demo04;
+
 /**
  * 8大基本类型
- **/
+ */
 public class Demo04 {
   public static void main(String[] args) {
     byte score = 99;
