@@ -3,7 +3,7 @@ package demo08;
 import java.util.Scanner;
 
 public class Demo08 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
     String[] formula = new String[0];
@@ -39,7 +39,7 @@ public class Demo08 {
     System.out.println("结果：" + calc(formula));
   }
 
-  public static String getFormula (String[] formula) {
+  public static String getFormula(String[] formula) {
     String result = "";
 
     for (int i = 0; i < formula.length; i++) {
@@ -49,7 +49,7 @@ public class Demo08 {
     return result;
   }
 
-  public static double calc (String[] formula) {
+  public static double calc(String[] formula) {
     double result = Double.parseDouble(formula[0]);
 
     // 排除最后一个，因为最后一个是 "=" 无计算意义
@@ -83,7 +83,7 @@ public class Demo08 {
     return result;
   }
 
-  public static String errorMessage () {
+  public static String errorMessage() {
     return "非法输入，将会忽略本次输入";
   }
 }
