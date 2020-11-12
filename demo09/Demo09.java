@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Demo09 {
   public static void main (String[] args) {
-    System.out.println("====================================");
-
     // 定义 + 赋值
     double[] numbers1 = new double[]{1, 2, 3};
 
