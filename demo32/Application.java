@@ -1,10 +1,10 @@
-package demo31;
+package demo32;
 
 import java.io.*;
 
 public class Application {
   public static void main (String[] args) {
-    String TMP_DIR_PATH = "./demo31/tmp";
+    String TMP_DIR_PATH = "./demo32/tmp";
     String TMP_FILE_PATH = TMP_DIR_PATH + "/test.txt";
 
     File tmpDir = new File(TMP_DIR_PATH);
@@ -26,25 +26,25 @@ public class Application {
 
     // 往文件中写入内容
     try {
-      FileOutputStream fileOutputStream = new FileOutputStream(tmpFile);
+      FileWriter fileWriter = new FileWriter(tmpFile);
       String str = "小桥流水哗啦啦~~";
 
       System.out.println("============================");
       System.out.println("写入完毕");
-      fileOutputStream.write(str.getBytes());
+      fileWriter.write(str);
       System.out.println("============================");
 
-      fileOutputStream.close();
+      fileWriter.close();
     } catch (IOException e) {
       e.printStackTrace();
     }
 
     // 读取内容
     try {
-      FileInputStream fileInputStream = new FileInputStream(tmpFile);
+      FileReader fileReader = new FileReader(tmpFile);
 
       // 每次读取的大小，单位是字节
-      byte[] bytes = new byte[1024];
+      char[] bytes = new char[1024];
 
       // 每次读取到的大小
       // 如果没有读取到就会返回 -1
@@ -54,7 +54,7 @@ public class Application {
       StringBuilder result = new StringBuilder();
 
       // 循环读取
-      while ((len = fileInputStream.read(bytes)) != -1) {
+      while ((len = fileReader.read(bytes)) != -1) {
         result.append(new String(bytes, 0, len));
       }
 
@@ -63,7 +63,7 @@ public class Application {
       System.out.println(result);
       System.out.println("======================");
 
-      fileInputStream.close();
+      fileReader.close();
     } catch (IOException e) {
       e.printStackTrace();
     }
